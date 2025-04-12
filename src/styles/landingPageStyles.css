@@ -1,0 +1,114 @@
+/* src/styles/landingPageStyles.css */
+.section_outerShell {
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    position: relative;
+    background-image: url('../assets/hero_bg_img.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  
+  .background_overlay {
+    background: rgba(0, 0, 0, 0.4);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .logo_area {
+    margin-top: 4rem;
+    margin-bottom: 0rem;
+  }
+  
+  .logo_icon {
+    height: 10rem;
+    width : 12rem;
+   
+    margin: 0 auto;
+  }
+  
+  .text_tagline {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0.0rem;
+  }
+  
+  .text_subtag {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 0.2rem;
+  }
+  
+  .text_contentBox {
+    margin-top: 1rem;
+    max-width: 700px;
+  }
+  
+  .banner_motto {
+    background-color: #ffcc00;
+    color: #1e1e1e;
+    font-weight: 700;
+    padding: 0.5rem 1.2rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+  }
+  
+  .primary_header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+  
+  .text_get {
+    color: #ffcc00;
+  }
+  
+  .text_gain {
+    color: #ffcc00;
+  }
+  
+  .btn_cta {
+    background-color: #ffcc00;
+    color: #1e1e1e;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    border: none;
+    margin-top: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn_cta:hover {
+    background-color: #e6b800;
+  }
+  
+  .section_bottomBar {
+    background-color: #111;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .trust_headline {
+    color: #ffcc00;
+    font-weight: 800;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .trust_paragraph {
+    color: #ddd;
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  

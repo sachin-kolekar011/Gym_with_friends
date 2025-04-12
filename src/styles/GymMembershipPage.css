@@ -1,0 +1,1079 @@
+/* 
+/* Base Styles */
+.fitness-membership-portal {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #2d3748;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.fitness-hero-section {
+  background: linear-gradient(135deg, #1a365d 0%, #153e75 100%);
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.fitness-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.fitness-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.fitness-hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.fitness-cta-button {
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fitness-cta-button:hover {
+  background-color: #c53030;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cta-icon {
+  transition: transform 0.3s ease;
+}
+
+.fitness-cta-button:hover .cta-icon {
+  transform: translateX(3px);
+}
+
+/* Section Styles */
+.fitness-section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.fitness-section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #1a202c;
+}
+
+.fitness-section-description {
+  font-size: 1.125rem;
+  color: #4a5568;
+  margin-bottom: 0;
+}
+
+/* Plans Section */
+.fitness-plans-section {
+  padding: 5rem 2rem;
+  background-color: #f7fafc;
+}
+
+.fitness-plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fitness-plan-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  border: 1px solid #e2e8f0;
+}
+
+.fitness-featured-plan {
+  border-top: 4px solid #e53e3e;
+  transform: scale(1.02);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fitness-plan-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background-color: #e53e3e;
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.fitness-plan-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.fitness-plan-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+.fitness-plan-price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+
+.fitness-price-amount {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a202c;
+}
+
+.fitness-price-term {
+  font-size: 0.875rem;
+  color: #718096;
+  align-self: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.fitness-plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.fitness-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  font-size: 0.9375rem;
+}
+
+.fitness-feature-included {
+  color: #38a169;
+  min-width: 20px;
+}
+
+.fitness-feature-excluded {
+  color: #e53e3e;
+  min-width: 20px;
+  opacity: 0.7;
+}
+
+.fitness-join-button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #edf2f7;
+  color: #2d3748;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.fitness-join-button:hover {
+  background-color: #e2e8f0;
+}
+
+.fitness-featured-button {
+  background-color: #e53e3e;
+  color: white;
+}
+
+.fitness-featured-button:hover {
+  background-color: #c53030;
+}
+
+/* Benefits Section */
+.fitness-benefits-section {
+  padding: 5rem 2rem;
+  background-color: white;
+}
+
+.fitness-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fitness-benefit-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.fitness-benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.fitness-benefit-icon {
+  color: #e53e3e;
+  margin-bottom: 1rem;
+}
+
+.fitness-benefit-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #1a202c;
+}
+
+.fitness-benefit-description {
+  color: #4a5568;
+  font-size: 0.9375rem;
+}
+
+/* Testimonials Section */
+.fitness-testimonials-section {
+  padding: 5rem 2rem;
+  background-color: #f7fafc;
+}
+
+.fitness-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fitness-testimonial-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.fitness-testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fitness-testimonial-content {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.fitness-quote-icon {
+  color: #e53e3e;
+  opacity: 0.2;
+  font-size: 2.5rem;
+  position: absolute;
+  top: -10px;
+  left: -5px;
+}
+
+.fitness-testimonial-text {
+  font-style: italic;
+  color: #4a5568;
+  position: relative;
+  z-index: 1;
+}
+
+.fitness-testimonial-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.fitness-testimonial-rating {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.fitness-star-icon {
+  font-size: 0.875rem;
+}
+
+.fitness-star-filled {
+  color: #f6e05e;
+}
+
+.fitness-star-empty {
+  color: #e2e8f0;
+}
+
+.fitness-testimonial-author {
+  font-weight: 600;
+  color: #1a202c;
+  margin: 0;
+}
+
+/* FAQ Section */
+.fitness-faq-section {
+  padding: 5rem 2rem;
+  background-color: white;
+}
+
+.fitness-faq-accordion {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.fitness-faq-item {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.fitness-faq-question {
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.fitness-faq-question h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.fitness-faq-question:hover {
+  background-color: #f8fafc;
+}
+
+.fitness-faq-active {
+  background-color: #f8fafc;
+}
+
+.fitness-faq-answer {
+  padding: 0 1rem 1.5rem;
+  color: #4a5568;
+}
+
+.fitness-cta-container {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.fitness-cta-text {
+  font-size: 1.125rem;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+}
+
+.fitness-cta-large {
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .fitness-hero-title {
+    font-size: 2.25rem;
+  }
+  
+  .fitness-section-title {
+    font-size: 1.75rem;
+  }
+  
+  .fitness-plans-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .fitness-featured-plan {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .fitness-hero-section,
+  .fitness-plans-section,
+  .fitness-benefits-section,
+  .fitness-testimonials-section,
+  .fitness-faq-section {
+    padding: 3rem 1rem;
+  }
+  
+  .fitness-hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .fitness-hero-subtitle {
+    font-size: 1rem;
+  }
+} */
+
+
+
+
+
+/* Base Styles */
+.fitness-membership-portal {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #2d3748;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.fitness-hero-section {
+  background: linear-gradient(135deg, #1a365d 0%, #153e75 100%);
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.fitness-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.fitness-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.fitness-hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.fitness-cta-button {
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.fitness-cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #c53030 0%, #9b2c2c 100%);
+  z-index: -1;
+  transition: transform 0.4s ease;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.fitness-cta-button:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.fitness-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(229, 62, 62, 0.3);
+}
+
+.cta-icon {
+  transition: transform 0.3s ease;
+}
+
+.fitness-cta-button:hover .cta-icon {
+  transform: translateX(5px);
+}
+
+/* Section Styles */
+.fitness-section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.fitness-section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #1a202c;
+  position: relative;
+  display: inline-block;
+}
+
+.fitness-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #e53e3e 0%, #dd6b20 100%);
+  border-radius: 2px;
+}
+
+.fitness-section-description {
+  font-size: 1.125rem;
+  color: #4a5568;
+  margin-bottom: 0;
+}
+
+/* Plans Section */
+.fitness-plans-section {
+  padding: 5rem 2rem;
+  background-color: #f7fafc;
+}
+
+.fitness-plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fitness-plan-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  position: relative;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.fitness-plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-color: #e53e3e;
+}
+
+.fitness-plan-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #e53e3e 0%, #dd6b20 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.fitness-plan-card:hover::before {
+  opacity: 1;
+}
+
+.fitness-featured-plan {
+  border-top: 4px solid #e53e3e;
+  transform: scale(1);
+  position: relative;
+}
+
+.fitness-featured-plan:hover {
+  transform: scale(1.03);
+}
+
+.fitness-plan-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.fitness-plan-badge:hover {
+  transform: rotate(-5deg) scale(1.05);
+}
+
+.fitness-plan-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.fitness-plan-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+.fitness-plan-price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+
+.fitness-price-amount {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a202c;
+  position: relative;
+  font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+.fitness-price-amount::before {
+  content: '₹';
+  font-size: 0.8em;
+  vertical-align: super;
+  margin-right: 2px;
+  opacity: 0.8;
+}
+
+.fitness-price-amount::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: rgba(229, 62, 62, 0.2);
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.fitness-plan-card:hover .fitness-price-amount::after {
+  height: 12px;
+  background-color: rgba(229, 62, 62, 0.3);
+}
+
+.fitness-price-term {
+  font-size: 0.875rem;
+  color: #718096;
+  align-self: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.fitness-plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.fitness-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  font-size: 0.9375rem;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.fitness-feature-item:hover {
+  background-color: #f8fafc;
+  transform: translateX(5px);
+}
+
+.fitness-feature-included {
+  color: #38a169;
+  min-width: 20px;
+  transition: all 0.3s ease;
+}
+
+.fitness-feature-item:hover .fitness-feature-included {
+  transform: scale(1.2);
+}
+
+.fitness-feature-excluded {
+  color: #e53e3e;
+  min-width: 20px;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.fitness-join-button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #edf2f7;
+  color: #2d3748;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.fitness-join-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+  z-index: -1;
+  transition: transform 0.4s ease;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.fitness-join-button:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.fitness-join-button:hover {
+  color: white;
+  box-shadow: 0 10px 15px rgba(229, 62, 62, 0.3);
+}
+
+.fitness-featured-button {
+  background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+  color: white;
+  animation: pulse 2s infinite;
+}
+
+.fitness-featured-button:hover {
+  background: linear-gradient(135deg, #c53030 0%, #9b2c2c 100%);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(229, 62, 62, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(229, 62, 62, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(229, 62, 62, 0);
+  }
+}
+
+/* Benefits Section */
+.fitness-benefits-section {
+  padding: 5rem 2rem;
+  background-color: white;
+}
+
+.fitness-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fitness-benefit-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: 
+    linear-gradient(white, white),
+    radial-gradient(circle at top left, #feb2b2 0%, transparent 15%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%, auto;
+}
+
+.fitness-benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.fitness-benefit-icon {
+  color: #e53e3e;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.fitness-benefit-card:hover .fitness-benefit-icon {
+  transform: scale(1.2);
+}
+
+.fitness-benefit-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #1a202c;
+}
+
+.fitness-benefit-description {
+  color: #4a5568;
+  font-size: 0.9375rem;
+}
+
+/* Testimonials Section */
+.fitness-testimonials-section {
+  padding: 5rem 2rem;
+  background-color: #f7fafc;
+}
+
+.fitness-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fitness-testimonial-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.fitness-testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fitness-testimonial-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(30deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% { left: -50%; }
+  20% { left: 100%; }
+  100% { left: 100%; }
+}
+
+.fitness-testimonial-content {
+  position: relative;
+  margin-bottom: 1.5rem;
+  z-index: 1;
+}
+
+.fitness-quote-icon {
+  color: #e53e3e;
+  opacity: 0.2;
+  font-size: 2.5rem;
+  position: absolute;
+  top: -10px;
+  left: -5px;
+}
+
+.fitness-testimonial-text {
+  font-style: italic;
+  color: #4a5568;
+  position: relative;
+}
+
+.fitness-testimonial-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.fitness-testimonial-rating {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.fitness-star-icon {
+  font-size: 0.875rem;
+}
+
+.fitness-star-filled {
+  color: #f6e05e;
+}
+
+.fitness-star-empty {
+  color: #e2e8f0;
+}
+
+.fitness-testimonial-author {
+  font-weight: 600;
+  color: #1a202c;
+  margin: 0;
+}
+
+/* FAQ Section */
+.fitness-faq-section {
+  padding: 5rem 2rem;
+  background-color: white;
+}
+
+.fitness-faq-accordion {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.fitness-faq-item {
+  border-bottom: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.fitness-faq-item:last-child {
+  border-bottom: none;
+}
+
+.fitness-faq-question {
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.fitness-faq-question h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a202c;
+  transition: all 0.3s ease;
+}
+
+.fitness-faq-question:hover {
+  background-color: #f8fafc;
+}
+
+.fitness-faq-question:hover h3 {
+  color: #e53e3e;
+}
+
+.fitness-faq-active {
+  background-color: #f8fafc;
+}
+
+.fitness-faq-answer {
+  padding: 0 1rem 1.5rem;
+  color: #4a5568;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fitness-cta-container {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.fitness-cta-text {
+  font-size: 1.125rem;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+}
+
+.fitness-cta-large {
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .fitness-hero-title {
+    font-size: 2.25rem;
+  }
+  
+  .fitness-section-title {
+    font-size: 1.75rem;
+  }
+  
+  .fitness-plans-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .fitness-featured-plan {
+    transform: none;
+  }
+
+  .fitness-plan-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .fitness-featured-plan:hover {
+    transform: scale(1.01);
+  }
+}
+
+@media (max-width: 480px) {
+  .fitness-hero-section,
+  .fitness-plans-section,
+  .fitness-benefits-section,
+  .fitness-testimonials-section,
+  .fitness-faq-section {
+    padding: 3rem 1rem;
+  }
+  
+  .fitness-hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .fitness-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .fitness-section-title::after {
+    width: 60px;
+  }
+}
