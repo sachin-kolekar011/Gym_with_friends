@@ -1,13 +1,13 @@
 # Logs
 
 
-.src/api/movements.js
-.src/components/Movement.jsx
-.src/components/MovementManagement.jsx
-.src/components/MovementTable.jsx
-.src/components/UserTable.jsx
-.src/styles/MovementTable.css
-.src/api/movements.js
+src/api/movements.js
+src/components/Movement.jsx
+src/components/MovementManagement.jsx
+src/components/MovementTable.jsx
+src/components/UserTable.jsx
+src/styles/MovementTable.css
+src/api/movements.js
 logs
 *.log
 npm-debug.log*
