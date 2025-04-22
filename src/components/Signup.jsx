@@ -39,12 +39,12 @@ const Signup = () => {
       });
       setSuccessMsg(response.data.message);
       setErrorMsg('');
-      setFormValue({
-        username: '',
-        email: '',
-        mobileNumber: '',
-        password: ''
-      });
+      // setFormValue({
+      //   username: '',
+      //   email: '',
+      //   mobileNumber: '',
+      //   password: ''
+      // });
 
       setTimeout(() => {
         setSuccessMsg('');

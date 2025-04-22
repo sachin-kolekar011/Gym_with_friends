@@ -32,8 +32,17 @@ import MovementManagement from './components/MovementManagement'
 import GymMembershipForm from './components/GymMembershipForm'
 // import LandingHero from './components/LandingHero'
 
+import AdminLogin from './components/AdminLogin';
+import AdminDashboard from './components/AdminDashboard';
+import { Navigate } from 'react-router-dom'
+
+import AdminNavbar from './components/AdminNavbar'
 
 
+const isAdminLoggedIn = () => {
+  // In a real app, you would check for a valid JWT in local storage or cookies
+  return localStorage.getItem('isAdminLoggedIn') === 'true';
+};
 
 function App() {
   
@@ -41,6 +50,7 @@ function App() {
 
 return(
   <>
+  {/* <AdminNavbar/> */}
   {/* <Movement/> */}
     
     {/* <MovementTable/> */}
@@ -59,7 +69,14 @@ return(
         <Route path="/membership" element={<GymMembershipPage/>} />
         <Route path="/find-gym" element={<GymLocator />} />
         <Route path="/membershipform" element={<GymMembershipForm />} />
-
+        <Route path="/admin/login" element={<AdminLogin />} />
+                <Route
+                    path="/admin/dashboard"
+                    element={
+                        isAdminLoggedIn() ? <AdminDashboard /> : <Navigate to="/admin/login" />
+                    }
+                />
+                <Route path="/" element={<Navigate to="/admin/login" />} />
       
       </Routes>
     </Router> }
